@@ -1,0 +1,9 @@
+{
+  "hosting": {
+    "glass-site": {
+      "site": "glass-site",
+      "public": "public",
+      "ignore": ["**/.DS_Store", "**/._*", "firebase.json", ".firebaserc"]
+    }
+  }
+}

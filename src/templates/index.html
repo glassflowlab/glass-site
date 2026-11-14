@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>玻璃小店 — {{ TOTAL_PRODUCTS }} 種玻璃瓶</title>
+<meta name="description" content="{{ SHOP_NAME }}：{{ TOTAL_PRODUCTS }} 種玻璃瓶，LINE Shop 24hr 下單。">
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<header class="site-header">
+  <a href="/" class="brand">🍶 玻璃小店</a>
+  <nav>
+    <a href="/products/">所有瓶款</a>
+    <a href="{{ SHOP_URL }}" class="btn-shop" target="_blank">前往 LINE Shop 購物</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero">
+  <h1>玻璃瓶 × 手作靈感</h1>
+  <p class="lead">{{ TOTAL_PRODUCTS }} 種玻璃瓶，LINE Shop 直接下單</p>
+  <a href="{{ SHOP_URL }}" class="cta" target="_blank">前往 LINE Shop →</a>
+</section>
+
+<section class="featured">
+  <h2>熱門瓶款</h2>
+  <div class="bottles-grid">
+    {{ TOP_PRODUCTS_HTML }}
+  </div>
+  <p class="hint">資料來自 LINE Shop 商品清單</p>
+</section>
+</main>
+
+<footer class="site-footer">
+  <p>🍶 玻璃小店 ・ {{ SHOP_NAME }}</p>
+</footer>
+</body>
+</html>

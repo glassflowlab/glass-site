@@ -14,6 +14,6 @@ jobs:
         with:
           node-version: '20'
       - run: npm install -g firebase-tools@13
-      - run: firebase deploy --project glassflow-lab --only hosting:glass-site
+      - run: firebase deploy --project glass-shop-mini --only hosting:glass-site
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}

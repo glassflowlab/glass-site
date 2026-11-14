@@ -1,9 +1,14 @@
 {
-  "hosting": {
-    "glass-site": {
+  "hosting": [
+    {
       "site": "glass-site",
       "public": "public",
-      "ignore": ["**/.DS_Store", "**/._*", "firebase.json", ".firebaserc"]
+      "ignore": [
+        "**/.DS_Store",
+        "**/._*",
+        "firebase.json",
+        ".firebaserc"
+      ]
     }
-  }
+  ]
 }
